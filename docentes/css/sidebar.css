@@ -1,0 +1,113 @@
+:root {
+  --main-bg-color: #009d63; /* Color principal (verde del logo) */
+  --main-text-color: #009d63; /* Color de texto principal */
+  --second-text-color: #555555; /* Color de texto secundario (gris oscuro) */
+  --second-bg-color: #e0f7ed; /* Color de fondo secundario (verde claro) */
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+      to right,
+      #d4f8ea, /* Verde claro */
+      #e0f7ed, /* Verde más claro */
+      #ebfaf3, /* Verde muy claro */
+      #f5fdf9, /* Blanco verdoso */
+      #ffffff  /* Blanco */
+  );
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+}
+
+.sidebar-brand {
+  font-size: 1rem;
+  padding: 0rem 0rem;
+  color: gray;  
+  text-decoration: none;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 17px 30px;
+}
+
+.list-alum {
+  padding: 0rem 1rem;
+}
+
+.list-group a.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+.list-group a:focus {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+      margin-left: 0;
+  }
+
+  #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+  }
+}

@@ -1,0 +1,119 @@
+body{
+    background:
+    linear-gradient(rgba(220, 234, 237, .7),rgba(220, 234, 237, .7)),
+    url(../imagenes/fondo_logo.jpg) repeat;
+}
+.container{
+    --bs-gutter-x: 0rem;
+}
+
+.form-background{
+    background: #fff;
+    width: 950px;
+    border-radius: 10px;
+    padding: 32px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /*-webkit-box-shadow: 0px 15px 88px -37px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 15px 88px -37px rgba(0,0,0,0.17);
+    box-shadow: 0px 15px 88px -37px rgba(0,0,0,0.17);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+form{
+    /*text-transform: capitalize;*/
+    font-family: 'Lato','Arial',sans-serif;
+    text-align: center;
+}
+h1{
+    font-family: 'Montserrat','Arial',sans-serif;
+    /*color: #8D6CC7;*/
+    color: #009d63;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+}
+input{
+    /*width: 100%;*/
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #DAE2F1;
+    padding: 15px 20px;
+    color:#009d63;
+    font-size: .9rem;
+    transition: .4s;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:focus{
+        border-color: #009d63;
+        outline: none;
+    }
+}
+select{
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #DAE2F1;
+    padding: 15px 20px;
+    color:#009d63;
+    font-size: .9rem;
+    transition: .4s;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:focus{
+        border-color: #009d63;
+        outline: none;
+    }
+}
+option{
+    color: black;
+    font-size: .9rem;
+}
+
+[type="submit"]{
+    background: #009d63;
+    border-radius: 30px;
+    padding: 16px 30px;
+    width: 300px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: .4s;
+    font-family: 'Montserrat','Arial',sans-serif;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+.login{
+    text-align: center;
+    margin-top: 24px;
+    font-size: .9rem;
+    font-family: 'Montserrat','Arial',sans-serif;
+    
+     & a{
+      margin-left: 4px;
+      text-decoration: none;
+      color: #009d63;
+      transition: .3s;
+    }
+    & a:hover{
+      color: darken(#009d63,3%);
+    }
+}
+@media (max-width: 576px) {
+    .form-background {
+        width: 400px;
+        margin-top: 4rem;
+        padding: 50px;
+    }
+    .login{
+        font-size: .9rem;
+    }
+    input{
+        padding: 15px 45px;
+    }
+}
